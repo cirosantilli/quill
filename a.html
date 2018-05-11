@@ -1,0 +1,30 @@
+<link href="https://cdn.quilljs.com/1.0.0/quill.snow.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.9.0/dist/katex.min.css" integrity="sha384-TEMocfGvRuD1rIAacqrknm5BQZ7W7uWitoih+jMNFXQIbNl16bO8OZmylH/Vi/Ei" crossorigin="anonymous">
+
+<div id="toolbar">
+  <button class="ql-header" value="1">1</button>
+  <button class="ql-header" value="2">2</button>
+  <button class="ql-header" value="3">3</button>
+  <button class="ql-header" value="4">4</button>
+  <button class="ql-header" value="5">5</button>
+  <button class="ql-header" value="6">6</button>
+  <button class="ql-header" value="7">7</button>
+  <button class="ql-formula"></button>
+</div>
+
+<div id="editor">
+  <p>Hello World!</p>
+</div>
+
+<script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/katex@0.9.0/dist/katex.min.js" integrity="sha384-jmxIlussZWB7qCuB+PgKG1uLjjxbVVIayPJwi6cG6Zb4YKq0JIw+OMnkkEC7kYCq" crossorigin="anonymous"></script>
+
+<script>
+  var editor = new Quill('#editor', {
+    modules: {
+      formula: true,
+      toolbar: '#toolbar'
+    },
+    theme: 'snow'
+  });
+</script>
